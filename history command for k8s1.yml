@@ -1,0 +1,67 @@
+ls
+  503  export KUBECONFIG=$PWD/Downloads/dev-cluster-kubeconfig.yaml
+  504  kubectl get nodes
+  505  echo $KUBECONFIG
+  506  ls -ltr
+  507  echo $KUBECONFIG
+  508  kubectl get namespace
+  509  kubectl get deploy
+  510  kubectl get deploy -n uat
+  511  kubectl get service
+  512  kubectl get pods
+  513  kubectl get pods -n uat
+  514  kubectl namespace
+  515  kubectl get namespace
+  516  kubectl get pods -n kube-system
+  517  mkdir kubernetes
+  518  cd kubernetes/
+  519  code name.yaml
+  520  ls
+  521  cat name.yaml
+  522  kubectl create -f name.yaml
+  523  kubectl create -f name.yaml
+  524  kubectl create namespace dev
+  525  kubectl get namespace
+  526  kubectl create -f name.yaml
+  527  kubectl create -f name.yaml
+  528  kubectl create -f name.yaml
+  529  ls
+  530  code cnt-dev.yml
+  531  ls
+  532  kubectl create -f cnt-dev.yml
+  533  kubectl get deploy
+  534  kubectl get pods
+  535  kubectl describe deployment cnt-dev-app
+  536  kubectl get rs
+  537  kubectl get pods
+  538  kubectl get nodes
+  539  kubectl get pods -o wide
+  540  kubectl get pods
+  541  kubectl describe pods cnt-dev-app-588644475-5vr9n
+  542  code cnt-service.yml
+  543  kubectl create -f cnt-app-service
+  544  kubectl create -f cnt-app-service.yml
+  545  kubectl create -f cnt-service.yml
+  546  kubectl get svc
+  547  kubectl apply -f cnt-service.yml
+  548  kubectl get svc
+  549  kubectl get nodes
+  550  kubectl get pod
+  551  kubectl get pods -o wide
+  552* kubectl delete service cnt-app-servic
+  553  kubectl delete deployment cnt-dev-app-588644475-5vr9n cnt-dev-app-588644475-94pzl cnt-dev-app-588644475-cq5l5
+  554  kubectl delete deployment cnt-dev-app-588644475-5vr9n
+  555  kubectl get pods -o wide
+  556  kubectl delete deployment cnt-dev-app
+  557  kubectl get pod
+  558  kubectl get pod
+  559  kubectl get svc
+  560  kubectl namespace
+  561  kubectl get namespace
+  562  kubectl delete namespace uat
+  563  kubectl delete namespace dev
+  564  kubectl delete namespace dev1
+  565  kubectl get namespace
+  566  kubectl create namespace dev1
+  567  kubectl delete namespace dev1
+  568  history

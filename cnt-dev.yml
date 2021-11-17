@@ -1,0 +1,26 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: cnt-dev-app
+  namespace: dev
+spec:
+  selector:
+    matchLabels:
+      app: cnt-dev-app
+  replicas: 5 # tells deployment to run 5 pods matching the template
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app: cnt-dev-app
+    spec:
+      containers:
+      - name: cnt-dev-app
+        image: nginx
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
